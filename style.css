@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+:root {
+  --SoftCyan: hsl(174, 77%, 80%); /*(Full Slider Bar)*/
+  --StrongCyan: hsl(174, 86%, 45%); /*(Slider Background)*/
+  --LightGrayishRed: hsl(14, 92%, 95%); /*(Discount Background)*/
+  --LightRed: hsl(15, 100%, 70%); /*(Discount Text)*/
+  --PaleBlue: hsl(226, 100%, 87%); /*(CTA Text)*/
+
+  --White: hsl (0, 0%, 100%); /*(Pricing Component Background)*/
+  --VeryPaleBlue: hsl(230, 100%, 99%); /*(Main Background)*/
+  --LightGrayishBlue: hsl(224, 65%, 95%); /*(Empty Slider Bar)*/
+  --LightGrayishBlue: hsl(223, 50%, 87%); /*(Toggle Background)*/
+  --GrayishBlue: hsl(225, 20%, 60%); /*(Text)*/
+  --DarkDesaturatedBlue: hsl(227, 35%, 25%); /*(Text & CTA Background)*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.intro-paragraph {
+  outline: 1px solid black;
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.intro-paragraph h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--DarkDesaturatedBlue);
+}
+
+.intro-paragraph p {
+  font-size: 0.85rem;
+  color: var(--GrayishBlue);
+  line-height: 2;
+}
+
+.price-component {
+  outline: 1px solid black;
+  background-color: var(--White);
+  text-align: center;
+}
+
+.price-component h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--GrayishBlue);
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.price {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  color: var(--DarkDesaturatedBlue);
+  font-weight: 800;
+}
+
+.month {
+  font-size: 0.85rem;
+  color: var(--GrayishBlue);
+}
+
+.benefits {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.benefits p {
+  font-size: 0.85rem;
+  color: var(--GrayishBlue);
+  margin-bottom: 0.5rem;
+}
+
+.checkImg {
+  margin-right: 1rem;
+  width: 5%;
+}
+
+.btnTrial {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--DarkDesaturatedBlue);
+  color: var(--PaleBlue);
+  font-weight: 800;
+  cursor: pointer;
+}
