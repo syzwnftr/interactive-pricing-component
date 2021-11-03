@@ -73,11 +73,17 @@ body {
 .slider {
   width: 100%;
   height: 0.65rem;
-  border-radius: 1.5rem;
   outline: none;
   -webkit-appearance: none;
   outline: none;
   background: var(--LightGrayishBlue);
+  border-radius: 1.5rem;
+}
+
+.slider::-moz-range-progress {
+  background-color: var(--SoftCyan);
+  height: 100%;
+  border-radius: 1.5rem;
 }
 
 .slider::-moz-range-thumb {
@@ -91,6 +97,8 @@ body {
   background-image: url("./images/icon-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: 0px 5px 10px 3px hsla(174, 86%, 45%, 30%);
+  -webkit-appearance: none;
 }
 
 .pricing {
