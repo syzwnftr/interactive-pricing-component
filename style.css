@@ -10,7 +10,7 @@
   --White: hsl (0, 0%, 100%); /*(Pricing Component Background)*/
   --VeryPaleBlue: hsl(230, 100%, 99%); /*(Main Background)*/
   --LightGrayishBlue: hsl(224, 65%, 95%); /*(Empty Slider Bar)*/
-  --LightGrayishBlue: hsl(223, 50%, 87%); /*(Toggle Background)*/
+  --LGrayishBlue: hsl(223, 50%, 87%); /*(Toggle Background)*/
   --GrayishBlue: hsl(225, 20%, 60%); /*(Text)*/
   --DarkDesaturatedBlue: hsl(227, 35%, 25%); /*(Text & CTA Background)*/
 }
@@ -51,8 +51,9 @@ body {
 .price-component {
   /* outline: 1px solid black; */
   background-color: var(--White);
+  /* background-color: yellowgreen; */
   text-align: center;
-  padding: 2.5rem 0;
+  padding: 2.5rem 1rem;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -62,6 +63,34 @@ body {
   margin-bottom: 2rem;
   color: var(--GrayishBlue);
   letter-spacing: 2.5px;
+}
+
+.slider-div {
+  /* outline: 1px solid black; */
+  margin-bottom: 2rem;
+}
+
+.slider {
+  width: 100%;
+  height: 0.65rem;
+  border-radius: 1.5rem;
+  outline: none;
+  -webkit-appearance: none;
+  outline: none;
+  background: var(--LightGrayishBlue);
+}
+
+.slider::-moz-range-thumb {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--StrongCyan);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-image: url("./images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .pricing {
