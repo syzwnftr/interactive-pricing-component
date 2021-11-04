@@ -198,4 +198,9 @@ body {
   color: var(--PaleBlue);
   font-weight: 800;
   cursor: pointer;
+  transition: color 0.4s;
+}
+
+.btnTrial:hover {
+  color: #fff;
 }
