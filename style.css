@@ -51,7 +51,6 @@ body {
 .price-component {
   /* outline: 1px solid black; */
   background-color: var(--White);
-  /* background-color: yellowgreen; */
   text-align: center;
   padding: 2.5rem 1rem;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
@@ -118,6 +117,48 @@ body {
 .month {
   font-size: 0.85rem;
   color: var(--GrayishBlue);
+}
+
+.billing {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--GrayishBlue);
+}
+
+.check {
+  position: relative;
+  width: 3.1rem;
+  height: 1.1rem;
+  -webkit-appearance: none;
+  background-color: var(--LightGrayishBlue);
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.check:checked {
+  background-color: var(--SoftCyan);
+}
+
+.check::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-color: #fff;
+  transform: scale(0.75);
+  border-radius: 2rem;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: left 0.4s;
+}
+
+.check:checked::before {
+  left: 1.95rem;
 }
 
 .benefits {
