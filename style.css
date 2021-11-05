@@ -56,7 +56,7 @@ body {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-.price-component h2 {
+.pageviews {
   font-size: 0.85rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
@@ -206,6 +206,28 @@ body {
 }
 
 @media (min-width: 36.25rem) {
+  .pageviews-pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .pageviews,
+  .pricing {
+    margin-bottom: 0;
+  }
+
+  .slider-div {
+    flex-basis: 100%;
+    order: 3;
+    margin: 3rem 0;
+  }
+
+  .slider {
+    width: 80%;
+  }
+
   .billing {
     justify-content: center;
   }
