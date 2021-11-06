@@ -247,10 +247,11 @@ body {
 
 @media (min-width: 50rem) {
   .benefits-trial {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 5rem;
   }
 
   .benefits {
