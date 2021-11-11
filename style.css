@@ -219,6 +219,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .intro-paragraph {
+    margin-top: 0;
+  }
+
   .pageviews,
   .pricing {
     margin-bottom: 0;
@@ -277,7 +281,11 @@ body {
     align-items: center;
   }
 
+  .intro-paragraph h1 {
+    font-size: 1.7rem;
+  }
+
   .price-component {
-    max-width: 40rem;
+    max-width: 45rem;
   }
 }
