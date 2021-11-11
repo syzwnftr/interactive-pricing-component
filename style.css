@@ -280,7 +280,6 @@ body {
 
 @media (min-width: 62.5rem) {
   .container {
-    outline: 1px solid black;
     max-width: 48rem;
     margin: 1rem auto;
   }
