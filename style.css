@@ -38,7 +38,7 @@ body {
 
 .intro-paragraph h1 {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: var(--DarkDesaturatedBlue);
 }
 
@@ -46,6 +46,10 @@ body {
   font-size: 0.85rem;
   color: var(--GrayishBlue);
   line-height: 2;
+}
+
+.intro-paragraph p span {
+  display: block;
 }
 
 .price-component {
@@ -221,6 +225,10 @@ body {
 
   .intro-paragraph {
     margin-top: 0;
+  }
+
+  .intro-paragraph p span {
+    display: inline;
   }
 
   .pageviews,
