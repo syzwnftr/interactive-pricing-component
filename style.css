@@ -265,3 +265,19 @@ body {
     text-align: left;
   }
 }
+
+@media (min-width: 62.5rem) {
+  .container {
+    outline: 1px solid black;
+    max-width: 61.25rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .price-component {
+    max-width: 40rem;
+  }
+}
