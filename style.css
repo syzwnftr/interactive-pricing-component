@@ -28,7 +28,6 @@ body {
 main {
   background-image: url(./images/bg-pattern.svg);
   background-repeat: no-repeat;
-  z-index: -1;
 }
 
 .container {
@@ -37,9 +36,13 @@ main {
 
 .intro-paragraph {
   /* outline: 1px solid black; */
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
   text-align: center;
-  margin-bottom: 4rem;
+  padding: 3rem 0;
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .intro-paragraph h1 {
@@ -60,12 +63,11 @@ main {
 
 .price-component {
   /* outline: 1px solid black; */
-  background-color: var(--White);
+  background-color: white;
   text-align: center;
   padding: 2.5rem 1rem;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0.6rem;
-  z-index: 99;
 }
 
 .pageviews {
