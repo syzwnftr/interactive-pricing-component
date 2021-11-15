@@ -115,6 +115,21 @@ main {
   -webkit-appearance: none;
 }
 
+.slider::-webkit-slider-thumb {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--StrongCyan);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-image: url("./images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 5px 10px 3px hsla(174, 86%, 45%, 30%);
+  -webkit-appearance: none;
+}
+
 .pricing {
   display: flex;
   justify-content: center;
