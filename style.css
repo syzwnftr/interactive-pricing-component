@@ -100,6 +100,13 @@ main {
   border-radius: 1.5rem;
 }
 
+/* .slider::-webkit-slider-runnable-track {
+  background-color: var(--SoftCyan);
+  height: 100%;
+  border-radius: 1.5rem;
+  appearance: none;
+} */
+
 .slider::-moz-range-thumb {
   height: 2.5rem;
   width: 2.5rem;
