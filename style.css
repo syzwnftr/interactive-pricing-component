@@ -91,7 +91,11 @@ main {
   -webkit-appearance: none;
   -moz-appearance: none;
   outline: none;
-  background: var(--LightGrayishBlue);
+  background: linear-gradient(
+    to right,
+    hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 50%
+  );
   border-radius: 1.5rem;
 }
 
