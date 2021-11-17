@@ -115,7 +115,7 @@ main {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  margin-top: -0.55rem;
+  margin-top: -1rem;
   background-color: var(--StrongCyan);
   cursor: pointer;
   border: none;
@@ -124,13 +124,18 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0px 5px 10px 3px hsla(174, 86%, 45%, 30%);
+  transition: background-color 0.35s;
+}
+
+.slider:hover::-webkit-slider-thumb {
+  background-color: hsl(174, 81%, 29%);
+  box-shadow: 0px 0px 10px 10px rgba(7, 226, 204, 0.3);
 }
 
 .slider::-moz-range-thumb {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  margin-top: -0.55rem;
   background-color: var(--StrongCyan);
   cursor: pointer;
   border: none;
@@ -139,7 +144,14 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0px 5px 10px 3px hsla(174, 86%, 45%, 30%);
+  transition: background-color 0.35s;
 }
+
+.slider:hover::-moz-range-thumb {
+  background-color: hsl(174, 81%, 29%);
+  box-shadow: 0px 0px 10px 10px rgba(7, 226, 204, 0.3);
+}
+
 /* .slider::-moz-range-progress {
   background-color: var(--SoftCyan);
   height: 100%;
