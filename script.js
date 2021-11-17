@@ -42,6 +42,8 @@ checkBox.addEventListener('click', function() {
     slider.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) ${val}%, hsl(224, 65%, 95%) ${val}%)`;
 
     if(this.checked) {
+        percent.textContent = '-25%';
+
         if(slider.value === "0") {
             pageViewValue.textContent = '10k';
             priceValue.textContent = '6.00';
@@ -97,6 +99,8 @@ checkBox.addEventListener('click', function() {
             }
         }
     } else {
+        percent.textContent = '-0%';
+
         if(slider.value === "0") {
             pageViewValue.textContent = '10k';
             priceValue.textContent = '8.00';
@@ -157,11 +161,14 @@ checkBox.addEventListener('click', function() {
 
 
 function resetCheckbox() {
-    slider.value = 50;
     pageViewValue.textContent = '100k';
     priceValue.textContent = '16.00';
+
+    slider.value = 50;
     slider.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%)`;
+    
     checkBox.checked = false;
+    percent.textContent = '-0%';
 }
 
 resetCheckbox();
