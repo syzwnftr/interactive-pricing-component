@@ -360,6 +360,10 @@ main {
     margin-bottom: 0;
     text-align: left;
   }
+
+  .percent::after {
+    content: " discount";
+  }
 }
 
 @media (min-width: 62.5rem) {
