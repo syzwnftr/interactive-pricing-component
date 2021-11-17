@@ -42,7 +42,7 @@ checkBox.addEventListener('click', function() {
     slider.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) ${val}%, hsl(224, 65%, 95%) ${val}%)`;
 
     if(this.checked) {
-        percent.textContent = '-25%';
+        percent.textContent = '25% discount';
 
         if(slider.value === "0") {
             pageViewValue.textContent = '10k';
@@ -99,7 +99,7 @@ checkBox.addEventListener('click', function() {
             }
         }
     } else {
-        percent.textContent = '-0%';
+        percent.textContent = '0% discount';
 
         if(slider.value === "0") {
             pageViewValue.textContent = '10k';
@@ -168,7 +168,7 @@ function resetCheckbox() {
     slider.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%)`;
     
     checkBox.checked = false;
-    percent.textContent = '-0%';
+    percent.textContent = '0% discount';
 }
 
 resetCheckbox();
